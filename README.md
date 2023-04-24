@@ -29,7 +29,7 @@ Download and install required software:
 
 Download and preprocess data:
 
-    ./scripts/download_data.sh
+    ./scripts/download_data_mine.sh
 
 Train a model:
 
