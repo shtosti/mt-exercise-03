@@ -20,10 +20,10 @@ SECONDS=0
 
 (cd $tools/pytorch-examples/word_language_model &&
     CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python main.py --data $data/office \
-        --epochs 3 \
+        --epochs 10 \
         --log-interval 100 \
-        --emsize 200 --nhid 200 --dropout 0.1 --tied \
-        --save $models/model_drop_01.pt 
+        --emsize 200 --nhid 200 --dropout 0.2 --tied \
+        --save $models/model_drop_02.pt 
 )
 
 echo "time taken:"
